@@ -1,0 +1,30 @@
+.navbar {
+  background-color: black;
+  opacity: 0.5;
+  min-height: 50px;
+  color: white;
+  font-family: Helvetica;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  .title {
+    font-size: 2rem;
+    padding-top: 12.5px;
+    display: inline-block;
+  }
+
+  .connexion {
+    padding-top: 12.5px;
+    padding-right: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    &:hover {
+      color: blue;
+    }
+  }
+}
