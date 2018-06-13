@@ -9,6 +9,8 @@ export class StatisticsExcerptComponent implements OnInit {
 
   @Input() name: string;
   @Input() value: string;
+  @Input() image: string;
+  
 
   constructor() { }
 
