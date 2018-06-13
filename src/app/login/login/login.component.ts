@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    if (this.pseudo === 'admin' && this.password === 'admin') {
-      this.auth.login();
+    if (this.password === 'admin') {
+      this.auth.login(this.pseudo);
       this.router.navigate(['profil']);
     } else {
       // implements alert system

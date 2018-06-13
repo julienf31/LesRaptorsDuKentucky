@@ -9,6 +9,7 @@ import {Router} from '@angular/router';
 export class AuthService {
 
   private _logged$ = new BehaviorSubject<boolean>(false);
+  public username: string;
 
   constructor(private router: Router) {
   }
@@ -17,7 +18,8 @@ export class AuthService {
     return this._logged$.asObservable();
   }
 
-  login() {
+  login(username) {
+    this.username = username;
     this._logged$.next(true);
   }
 
