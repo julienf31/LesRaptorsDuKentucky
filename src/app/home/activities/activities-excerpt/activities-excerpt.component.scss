@@ -1,9 +1,12 @@
 #activities-block {
-  margin: auto;
   width: 50vw;
   text-align: center;
   background: rgba(255,255,255,0.5);
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10em;
   h1.title{
     font-weight: lighter;
     .bold{
