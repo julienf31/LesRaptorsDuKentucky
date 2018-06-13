@@ -13,6 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home/home.component';
 import { ProfilComponent } from './profil/profil/profil.component';
 import { LoginComponent } from './login/login/login.component';
+import {AuthService} from './auth/auth.service';
+import {AuthGuard} from './auth/auth.guard';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,17 @@ import { LoginComponent } from './login/login/login.component';
     FooterComponent,
     HomeComponent,
     ProfilComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    AuthGuard,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

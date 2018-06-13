@@ -1,4 +1,9 @@
 <nav class="navbar sticky">
-  <div class="text title"><a routerLink="home"><img src="../../assets/LogoT_G.png" width="150px"></a></div>
-  <a routerLink="login" class="text connexion">Se connecter</a>
+  <ul>
+    <li><img src="../../assets/LogoT_G.png" width="150px"></li>
+    <li *ngIf="(login | async)" class="right"> <a (click)="auth.logout()">Logout</a></li>
+    <li *ngIf="(login | async)" class="right"><a routerLink="profil" class="">Profil</a></li>
+    <li *ngIf="!(login | async)" class="right"><a routerLink="login" class="">Se connecter</a></li>
+    <li class="right"><a routerLink="home" class="">Home</a></li>
+  </ul>
 </nav>
