@@ -1,5 +1,14 @@
-<section class="content">
-  <div *ngFor="let item of items | async">
-    <app-activities-excerpt name="{{ item.name }}" text="{{ item.text }}" image="{{ item.image }}"></app-activities-excerpt>
-  </div>
-</section>
+<div class="padding">
+  <h2>Ce que nous <strong>faisons !</strong> </h2>
+      <section class="content">
+          <div *ngFor="let item of items | async">
+              <app-activities-excerpt name="{{ item.name }}" text="{{ item.text }}" image="{{ item.image }}"></app-activities-excerpt>
+              Lorem ipsum dolor sit am<br>
+              Praesent tincidunt mollis n<br>
+              Lorem ipsum dolor sit am<br>
+              Praesent tincidunt mollis n<br>
+              Lorem ipsum dolor sit am<br>
+              Praesent tincidunt mollis n<br>
+          </div>
+      </section>
+</div>
