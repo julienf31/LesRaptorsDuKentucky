@@ -1,14 +1,5 @@
 <section class="content">
-  <app-activities-excerpt></app-activities-excerpt>
-  <app-activities-excerpt></app-activities-excerpt>
-  <app-activities-excerpt></app-activities-excerpt>
-  <app-activities-excerpt></app-activities-excerpt>
-  <app-activities-excerpt></app-activities-excerpt>
-  <app-activities-excerpt></app-activities-excerpt>
+  <div *ngFor="let item of items | async">
+    <app-activities-excerpt name="{{ item.name }}" text="{{ item.text }}"></app-activities-excerpt>
+  </div>
 </section>
-
-<ul>
-  <li class="text" *ngFor="let item of items | async">
-    {{item.name}}
-  </li>
-</ul>
