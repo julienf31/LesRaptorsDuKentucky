@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-statistics-excerpt',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./statistics-excerpt.component.scss']
 })
 export class StatisticsExcerptComponent implements OnInit {
+
+  @Input() name: string;
+  @Input() value: string;
 
   constructor() { }
 
