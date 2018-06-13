@@ -11,6 +11,8 @@ import { ActivitiesExcerptComponent } from './home/activities/activities-excerpt
 import { StatisticsExcerptComponent } from './home/statistics/statistics-excerpt/statistics-excerpt.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home/home.component';
+import { ProfilComponent } from './profil/profil/profil.component';
+import { LoginComponent } from './login/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomeComponent } from './home/home/home.component';
     ActivitiesExcerptComponent,
     StatisticsExcerptComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProfilComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
