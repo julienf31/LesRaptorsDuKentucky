@@ -1,68 +1,58 @@
-footer{
-    .footerA{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+footer {
+  .footerA {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-        h2{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            
-        }
-
-        .firstChildH2{
-            padding-top: 1.5em;            
-        }
-
-        .a{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            
-
-            .content{
-                width: 18em;
-                text-align: center;
-            }
-        }
-       
-        aside{
-
-           padding-bottom: 2em; 
-        }
-        
+    h2 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
-    .footerB{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        background-color:#d3d3d3;
+    .firstChildH2 {
+      padding-top: 1.5em;
+    }
 
-        .socialMedia{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-            img{
-                padding-left: 2em;
-                padding-right: 2em;
-                padding-top: 1.5em;
-            }   
-        }
+    .a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
 
-    .pCopyright{
+      .content {
+        width: 18em;
         text-align: center;
-        margin-bottom: 2em;
+      }
     }
+
+    aside {
+      padding-bottom: 2em;
     }
+
+  }
+
+  .footerB {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #d3d3d3;
+
+    .socialMedia {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1.5em;
+      }
+    }
+
+    .pCopyright {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+  }
 }
-
-
-
-
-
-
-
