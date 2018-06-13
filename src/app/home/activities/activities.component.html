@@ -1,5 +1,5 @@
 <section class="content">
   <div *ngFor="let item of items | async">
-    <app-activities-excerpt name="{{ item.name }}" text="{{ item.text }}"></app-activities-excerpt>
+    <app-activities-excerpt name="{{ item.name }}" text="{{ item.text }}" image="{{ item.image }}"></app-activities-excerpt>
   </div>
 </section>

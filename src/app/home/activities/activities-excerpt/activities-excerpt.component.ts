@@ -10,6 +10,7 @@ export class ActivitiesExcerptComponent implements OnInit {
 
   @Input() name: string;
   @Input() text: string;
+  @Input() image: string;
 
   constructor() { }
 
