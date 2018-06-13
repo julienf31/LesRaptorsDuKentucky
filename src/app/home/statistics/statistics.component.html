@@ -1,8 +1,10 @@
 <div id="stats" class="flex-center">
   <div id="statistic-block" class="center">
     <h1> Les <span class="bold">chiffres en 2018 </span></h1>
-    <div *ngFor="let item of items | async">
-      <app-statistics-excerpt name="{{ item.name}}" value="{{ item.value }}"></app-statistics-excerpt>
+    <div class="statItem">
+      <div class="content" *ngFor="let item of items | async">
+        <app-statistics-excerpt name="{{ item.name}}" value="{{ item.value }}" image="{{item.image}}"></app-statistics-excerpt>
+      </div>
     </div>
   </div>
 </div>  
